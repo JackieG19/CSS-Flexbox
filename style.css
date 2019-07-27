@@ -1,0 +1,45 @@
+@media(min-width:468px){
+    .container-1{
+      display:flex;/*This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.*/
+    }
+    
+    .container-2{
+      display:flex;  
+      justify-content:space-between;
+      /*aligns the flexible container's items when the items do not use all available space on the main-axis(horizontally)*/
+    }
+  }
+  
+  .container-3{
+    display:flex;  
+    flex-wrap:wrap; /*By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.*/
+    justify-content:space-between;
+  }
+  
+  .container-1 div, .container-2 div, .container-3 div{
+    border:1px #ccc solid;
+    padding:10px;
+  }
+  
+  .box-1{
+    flex:2;
+    order:2;
+  }
+  
+  .box-2{
+    flex:1;
+    order:1;
+  }
+  
+  .box-3{
+    flex:1;
+    order: 3;
+  }
+  
+  .container-2-box{
+    flex-basis: 27%;  /*assign a width to each flex item*/
+  }
+  
+  .container-3-box{
+    flex-basis:12%;
+  }
